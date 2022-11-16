@@ -1,7 +1,7 @@
 const botaoAlternar = document.querySelector('#toggle');
 
 function AlternarTema() {
-  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('dark');
 }
 
 function carregarTema() {
@@ -17,7 +17,7 @@ carregarTema();
 botaoAlternar.addEventListener('change', () => {
   AlternarTema();
 
-  document.body.classList.contains('dark-theme')
+  document.body.classList.contains('dark')
     ? localStorage.setItem('dark', 'on')
     : localStorage.removeItem('dark');
 });

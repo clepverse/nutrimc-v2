@@ -20,88 +20,334 @@
     <title>Treino de ombros</title>
   </head>
 
-  <body>
-    <div class="flex flex-col min-h-screen">
-      <header class="w-full bg-gray-700 border-b border-gray-600 px-2 sm:px-4 py-2.5 rounded">
+  <body class="">
+    <div
+      class="flex flex-col min-h-screen bg-slate-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+    >
+      <header
+        class="w-full bg-slate-100 dark:bg-gray-700 border-b border-slate-300 dark:border-gray-600 px-8 py-2.5 rounded"
+      >
         <div class="container flex flex-wrap justify-center items-center mx-auto">
-          <h1 class="text-mobile text-4xl text-gray-50 font-bold">
-            Nutr<span class="text-red-500 text-4xl">.</span>IMC
-          </h1>
+          <div class="container flex flex-wrap items-center justify-between mx-auto pt-2">
+            <a href="../index.html" class="flex items-center">
+              <img src="../img/logo.png" class="h-7 mr-3 sm:h-9" alt="NutriIMC Logo" />
+              <span
+                class="hidden sm:block text-3xl sm:text-4xl text-zinc-800 dark:text-gray-50 font-bold"
+              >
+                Nutr<span class="text-red-500 text-4xl">.</span>IMC
+              </span>
+            </a>
+
+            <ul
+              id="teste"
+              class="py-4 px-8 md:px-0 md:pl-0 md:space-x-4 md:mt-0 font-medium md:text-lg md:border-0 md:bg-white dark:bg-gray-700 md:dark:bg-gray-900 dark:border-gray-700 md:divide-x md:divide-solid border border-gray-100 rounded-none md:rounded-lg md:flex md:items-center md:static absolute bg-slate-50 w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-400px]"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 md:pl-0 pr-4 md:pr-0 md:ml-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:ml-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >IMC</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:ml-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contato</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 md:ml-4 md:mr-4 text-white bg-rose-500 rounded md:bg-transparent md:text-rose-600 md:p-0 dark:text-white dark:md:text-rose-600"
+                  aria-current="page"
+                  >Lista de exercícios</a
+                >
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-abdomen.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para abdomen</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-peito.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para peito</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-triceps.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para tríceps</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-biceps.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para bíceps</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="#" class="pointer-events-none">
+                  <div
+                    class="rounded border border-gray-500 p-4 mt-2 bg-rose-500 hover:cursor-default"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-white mt-5 block">Exercícios para ombros</strong>
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-costas.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para costas</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-pernas.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para pernas</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-gluteos.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para glúteos</strong
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="block md:hidden">
+                <a href="./treino-de-lombar.html" class="">
+                  <div
+                    class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                  >
+                    <header class="flex">
+                      <span
+                        class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
+                        >TUTORIAL</span
+                      >
+                    </header>
+
+                    <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                      >Exercícios para lombar</strong
+                    >
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            </div> -->
+
+            <div class="flex">
+              <div class="mr-3 flex items-center justify-end">
+                <label
+                  for="toggle"
+                  class="flex h-7 w-14 cursor-pointer items-center justify-between rounded-full bg-slate-300 p-1 duration-300 ease-in-out hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-600"
+                >
+                  <i class="fas fa-sun text-lg text-yellow-400"></i>
+                  <i class="fas fa-moon text-lg text-gray-700"></i>
+                  <div
+                    class="toggle-dot absolute h-5 w-5 transform rounded-full bg-white shadow-md duration-300 ease-in-out dark:translate-x-7"
+                  ></div>
+                </label>
+                <input id="toggle" type="checkbox" class="hidden" />
+              </div>
+
+              <span class="text-4xl cursor-pointer mx-2 translate-y-1 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+          </div>
         </div>
       </header>
 
       <main class="flex flex-1">
         <aside
-          class="max-h-screen sticky top-0 overflow-auto w-80 bg-gray-700 p-6 border-r border-gray-600 scrollbar scrollbar-thumb-[#B4B4B4] scrollbar-track-gray-900 scrollbar-thumb-rounded"
+          class="max-h-screen sticky top-0 overflow-auto w-72 lg:w-80 bg-slate-100 dark:bg-gray-700 p-6 border-r border-slate-300 dark:border-gray-600 scrollbar scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-[#B4B4B4] dark:scrollbar-track-gray-900 scrollbar-thumb-rounded hidden md:block"
         >
-          <span class="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block text-center"
-            >Lista de exercicios</span
+          <span
+            class="font-bold text-2xl pb-6 mb-6 border-b border-gray-200 dark:border-gray-500 block text-center"
+            >Lista de exercícios</span
           >
           <div class="flex flex-col gap-2">
             <a href="./treino-de-abdomen.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para abdomen</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para abdomen</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-peito.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para peito</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para peito</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-triceps.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para tríceps</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para tríceps</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-biceps.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para bíceps</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para bíceps</strong
+                >
               </div>
             </a>
 
-            <a href="#" class="">
-              <div
-                class="rounded border border-gray-500 p-4 mt-2 bg-rose-500 hover:cursor-not-allowed"
-              >
+            <a href="#" class="pointer-events-none">
+              <div class="rounded border border-gray-500 p-4 mt-2 bg-rose-500 hover:cursor-default">
                 <header class="flex">
                   <span
                     class="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold"
@@ -115,68 +361,78 @@
 
             <a href="./treino-de-costas.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para costas</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para costas</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-pernas.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para pernas</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para pernas</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-gluteos.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para glúteos</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para glúteos</strong
+                >
               </div>
             </a>
 
             <a href="./treino-de-lombar.html" class="">
               <div
-                class="rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
+                class="bg-gray-50 dark:bg-gray-700 rounded border border-gray-500 p-4 mt-2 hover:border-rose-500 transition-colors"
               >
                 <header class="flex">
                   <span
-                    class="text-xs rounded py-[0.125rem] px-2 text-white border border-red-500 font-bold"
+                    class="text-xs rounded py-[0.125rem] px-2 text-rose-800 dark:text-white border border-red-500 font-bold"
                     >TUTORIAL</span
                   >
                 </header>
 
-                <strong class="text-gray-200 mt-5 block">Exercícios para lombar</strong>
+                <strong class="text-slate-800 dark:text-gray-200 mt-5 block"
+                  >Exercícios para lombar</strong
+                >
               </div>
             </a>
           </div>
         </aside>
-        <div class="flex-1 prose prose-lg dark:prose-invert max-w-4xl m-auto">
-          <div class="my-20 px-4">
-            <h1 class="max-w-xl">7 Exercícios para treino de ombro em casa</h1>
+        <div
+          class="flex-1 prose prose-sm md:prose-lg lg:prose-xl dark:prose-invert max-w-4xl m-auto"
+        >
+          <div class="px-8 py-12">
+            <h1 class="max-w-2xl">7 Exercícios para treino de ombro em casa</h1>
 
             <p class="">
               O treino de ombro em casa é simples, fácil e ajuda a atingir diferentes objetivos,
@@ -347,6 +603,7 @@
               repetir com o braço esquerdo. Pode-se fazer 3 a 4 repetições para cada braço.
             </p>
           </div>
+
           <footer class="max-w-5xl border-t border-gray-600">
             <div class="py-6 text-center">
               &copy Equipe <span class="text-rose-500">NutriIMC</span> Uninassau.
@@ -355,5 +612,27 @@
         </div>
       </main>
     </div>
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6c32633a00.js" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="../../src/js/main.js"></script>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector('#teste');
+        e.name === 'menu'
+          ? ((e.name = 'close'),
+            list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100'))
+          : ((e.name = 'menu'),
+            list.classList.remove('top-[80px]'),
+            list.classList.remove('opacity-100'));
+      }
+    </script>
   </body>
 </html>
