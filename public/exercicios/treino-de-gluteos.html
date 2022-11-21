@@ -40,7 +40,7 @@
 
             <ul
               id="teste"
-              class="py-4 px-8 md:px-0 md:pl-0 md:space-x-4 md:mt-0 font-medium md:text-lg md:border-0 md:bg-white dark:bg-gray-700 md:dark:bg-gray-900 dark:border-gray-700 md:divide-x md:divide-solid border border-gray-100 rounded-none md:rounded-lg md:flex md:items-center md:static absolute bg-slate-50 w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-400px]"
+              class="py-4 px-8 md:px-0 md:pl-0 md:space-x-4 md:mt-0 font-medium md:text-lg md:border-0 md:bg-white dark:bg-gray-700 md:dark:bg-gray-900 dark:border-gray-200 md:divide-x md:divide-solid border-b border-gray-600 rounded-b-lg md:rounded-lg md:flex md:items-center md:static absolute bg-slate-100 w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-1200px]"
             >
               <li>
                 <a
@@ -65,10 +65,10 @@
                 >
               </li>
 
-              <li>
+              <li class="border-b-2 border-gray-500 dark:border-gray-300 md:border-none">
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 md:ml-4 md:mr-4 text-white bg-rose-500 rounded md:bg-transparent md:text-rose-600 md:p-0 dark:text-white dark:md:text-rose-600"
+                  class="block py-2 pl-3 pr-4 md:ml-4 md:mr-4 text-white bg-rose-500 rounded md:bg-transparent md:text-rose-600 md:p-0 dark:text-white dark:md:text-rose-600 mb-2"
                   aria-current="page"
                   >Lista de exercícios</a
                 >
@@ -674,10 +674,10 @@
         let list = document.querySelector('#teste');
         e.name === 'menu'
           ? ((e.name = 'close'),
-            list.classList.add('top-[80px]'),
+            list.classList.add('top-[75px]'),
             list.classList.add('opacity-100'))
           : ((e.name = 'menu'),
-            list.classList.remove('top-[80px]'),
+            list.classList.remove('top-[75px]'),
             list.classList.remove('opacity-100'));
       }
     </script>
