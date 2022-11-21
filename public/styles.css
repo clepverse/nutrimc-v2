@@ -1421,6 +1421,11 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1451,6 +1456,10 @@ video {
 
 .border-t-8 {
   border-top-width: 8px;
+}
+
+.border-b-8 {
+  border-bottom-width: 8px;
 }
 
 .border-gray-600 {
@@ -1584,6 +1593,10 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -2269,6 +2282,10 @@ body {
 
   .md\:pr-0 {
     padding-right: 0px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-lg {
