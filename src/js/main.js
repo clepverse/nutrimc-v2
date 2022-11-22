@@ -96,3 +96,12 @@ function filtroLista() {
     }
   });
 }
+
+function Menu(e) {
+  let list = document.querySelector('#menu-mobile');
+  e.name === 'menu'
+    ? ((e.name = 'close'), list.classList.add('top-[75px]'), list.classList.add('opacity-100'))
+    : ((e.name = 'menu'),
+      list.classList.remove('top-[75px]'),
+      list.classList.remove('opacity-100'));
+}
