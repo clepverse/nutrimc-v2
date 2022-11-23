@@ -4,6 +4,7 @@ function AlternarTema() {
   document.body.classList.toggle('dark');
 }
 
+// Carrega o DarkMode setado no cache do navegador
 function carregarTema() {
   const darkMode = localStorage.getItem('dark');
 
@@ -13,6 +14,8 @@ function carregarTema() {
 }
 
 carregarTema();
+
+// Altera o DarkMode
 
 botaoAlternar.addEventListener('change', () => {
   AlternarTema();
@@ -30,6 +33,7 @@ function alternarConteudo(form, lista) {
   document.getElementById(lista).style.display = 'none';
 }
 
+// Calculadora IMC
 function calcular() {
   var imc;
   var resultado = document.getElementById('resultado');
@@ -84,6 +88,7 @@ function calcular() {
   document.getElementById('classificacao').textContent = classificacao;
 }
 
+// Barra de pesquisa
 document.querySelector('#entrada-pesquisa').addEventListener('input', filtroLista);
 
 function filtroLista() {
@@ -103,6 +108,7 @@ function filtroLista() {
   });
 }
 
+// Menu responsive
 function Menu(e) {
   let list = document.querySelector('#menu-mobile');
   e.name === 'menu'
