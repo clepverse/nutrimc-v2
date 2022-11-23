@@ -22,19 +22,6 @@ botaoAlternar.addEventListener('change', () => {
     : localStorage.removeItem('dark');
 });
 
-var activeLista = document.getElementById('a-lista');
-var activeCalculadora = document.getElementById('a-calculadora');
-
-activeLista.addEventListener('click', () => {
-  activeLista.style.color = '#9f1239';
-  activeCalculadora.style.color = '#475569';
-});
-
-activeCalculadora.addEventListener('click', () => {
-  activeCalculadora.style.color = '#9f1239';
-  activeLista.style.color = '#475569';
-});
-
 function alternarConteudo(form, lista) {
   // Esconde o form
   document.getElementById(form).style.display = 'block';
@@ -56,23 +43,42 @@ function calcular() {
   resultado.textContent = imc;
 
   if (imc < 18.5) {
-    classificacao = 'Abaixo do peso';
-    resultado.style.color = '#713f12';
+    classificacao = 'Magreza';
+    resultado.style.color = '#99f6e4';
+    document.querySelector('#result_calc_0').style.color = '#99f6e4';
+    document.querySelector('#result_calc_1').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_2').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_3').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_4').style = 'text-gray-900 dark:text-white';
   } else if (imc <= 24.9) {
-    classificacao = 'Peso normal';
-    resultado.style.color = 'green';
+    classificacao = 'Normal';
+    resultado.style.color = '#4ade80';
+    document.querySelector('#result_calc_1').style.color = '#4ade80';
+    document.querySelector('#result_calc_0').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_2').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_3').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_4').style = 'text-gray-900 dark:text-white';
   } else if (imc <= 29.9) {
-    classificacao = 'Acima do peso';
-    resultado.style.color = 'orange';
-  } else if (imc < 35) {
-    classificacao = 'Obesidade Grau I';
-    resultado.style.color = 'red';
-  } else if (imc < 41) {
+    classificacao = 'Sobrepeso';
+    resultado.style.color = '#eab308';
+    document.querySelector('#result_calc_2').style.color = '#eab308';
+    document.querySelector('#result_calc_1').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_3').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_4').style = 'text-gray-900 dark:text-white';
+  } else if (imc < 39.9) {
     classificacao = 'Obesidade Grau II';
-    resultado.style.color = '#8B0000';
+    resultado.style.color = '#d97706';
+    document.querySelector('#result_calc_3').style.color = '#d97706';
+    document.querySelector('#result_calc_1').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_2').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_4').style = 'text-gray-900 dark:text-white';
   } else {
-    classificacao = 'Obesidade Grau III';
-    resultado.style.color = 'black';
+    classificacao = 'Obesidade Grave';
+    resultado.style.color = '#b45309';
+    document.querySelector('#result_calc_4').style.color = '#b45309';
+    document.querySelector('#result_calc_1').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_2').style = 'text-gray-900 dark:text-white';
+    document.querySelector('#result_calc_3').style = 'text-gray-900 dark:text-white';
   }
 
   document.getElementById('classificacao').textContent = classificacao;
@@ -100,8 +106,27 @@ function filtroLista() {
 function Menu(e) {
   let list = document.querySelector('#menu-mobile');
   e.name === 'menu'
-    ? ((e.name = 'close'), list.classList.add('top-[75px]'), list.classList.add('opacity-100'))
+    ? ((e.name = 'close'),
+      list.classList.remove('top-[-1200px]'),
+      list.classList.add('top-[75px]'),
+      list.classList.remove('opacity-0'),
+      list.classList.add('opacity-100'))
     : ((e.name = 'menu'),
       list.classList.remove('top-[75px]'),
-      list.classList.remove('opacity-100'));
+      list.classList.add('top-[-1200px]'),
+      list.classList.remove('opacity-100'),
+      list.classList.add('opacity-0'));
 }
+
+// var activeLista = document.getElementById('a-lista');
+// var activeCalculadora = document.getElementById('a-calculadora');
+
+// activeLista.addEventListener('click', () => {
+//   activeLista.style.color = '#e11d48';
+//   activeCalculadora.style.color = '#6b7280';
+// });
+
+// activeCalculadora.addEventListener('click', () => {
+//   activeCalculadora.style.color = '#e11d48';
+//   activeLista.style.color = '#6b7280';
+// });

@@ -29,7 +29,7 @@
       >
         <div class="container mx-auto flex flex-wrap items-center justify-center">
           <div class="container mx-auto flex flex-wrap items-center justify-between pt-2">
-            <a href="#" class="flex items-center">
+            <a href="./index.html" class="flex items-center">
               <img src="./img/logo.png" class="mr-3 h-7 sm:h-9" alt="NutriIMC Logo" />
               <span
                 class="hidden text-3xl font-bold text-zinc-800 dark:text-gray-50 sm:block sm:text-4xl"
@@ -44,9 +44,7 @@
             >
               <li>
                 <a
-                  id="a-lista"
-                  href=""
-                  onclick="alternarConteudo('container-lista', 'container-imccalc'); return false;"
+                  href="./index.html"
                   class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:ml-4 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-rose-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                   >Inicio</a
                 >
@@ -64,7 +62,9 @@
 
               <li>
                 <a
-                  href="./sobre.html"
+                  id="a-lista"
+                  href=""
+                  onclick="alternarConteudo('container-lista', 'container-imccalc'); return false;"
                   class="mb-2 block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:ml-4 md:mr-4 md:mb-0 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-rose-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                   >Sobre</a
                 >
@@ -199,177 +199,25 @@
               </form>
             </section>
 
-            <section id="container-lista" class="z-0 mt-2 px-0 py-2 text-zinc-800 xl:px-12">
-              <h2
-                class="rounded-lg py-2 px-2 text-center text-2xl font-medium opacity-90 shadow-sm dark:text-white md:text-left"
-              >
-                Lista exercícios
-              </h2>
+            <section id="container-lista" class="z-0 m-auto mb-60 max-w-4xl md:mb-0">
+              <h1 class="pt-12 text-center text-4xl sm:text-6xl">
+                Nutri<span class="font-bold text-rose-600">.</span>IMC
+              </h1>
+              <p class="py-10 text-sm leading-relaxed md:text-lg">
+                Projeto da faculdade desenvolvido na disciplina de
+                <span class="font-semibold">DESENVOLVIMENTO DE APLICAÇÕES PARA INTERNET</span>.
+                Projeto sem fins lucrativos. O
+                <strong>Nutri<span class="text-rose-600">.</span>IMC</strong> tem proposito de
+                apresentar de forma prática o conhecimento adquirido e apresenta-lo no projeto de
+                avaliação da unidade 2 da disciplina.
+              </p>
 
-              <div class="relative py-6">
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg
-                    aria-hidden="true"
-                    class="h-5 w-5 text-gray-500 dark:text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  id="entrada-pesquisa"
-                  class="block w-full rounded-lg border border-gray-300 bg-gray-100 p-4 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-                  placeholder="Procure por um músculo"
-                  required
-                />
-              </div>
-
-              <ul class="grid-row-1 my-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-abdomen.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Abdomen
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para abdomen
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-peito.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Peito
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para peito
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-triceps.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Tríceps
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para tríceps
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-biceps.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Bíceps
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para bíceps
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-ombros.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Ombros
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para ombros
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-costas.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Costas
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para costas
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-pernas.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Pernas
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para pernas
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-gluteos.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Glúteos
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para glúteos
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="item-lista justify-centers flex cursor-pointer flex-col items-center rounded-lg bg-slate-100 shadow-sm duration-300 hover:scale-110 dark:bg-gray-700 dark:text-white"
-                  onclick="location.href = './exercicios/treino-de-lombar.html'"
-                >
-                  <div class="py-6">
-                    <h5
-                      class="mb-2 text-2xl font-medium tracking-tight text-gray-600 dark:text-white"
-                    >
-                      Lombar
-                    </h5>
-                    <p class="font-normal text-gray-500 dark:text-gray-400">
-                      Exercícios para lombar
-                    </p>
-                  </div>
-                </li>
-              </ul>
+              <span class="font-semibold"
+                >Referências de artigos:
+                <a href="https://www.tuasaude.com/" class="text-rose-900 dark:text-rose-200">
+                  https://www.tuasaude.com
+                </a>
+              </span>
             </section>
           </div>
           <footer class="w-full border-t border-slate-300 text-center dark:border-gray-600">

@@ -4,25 +4,6 @@ module.exports = {
   content: ['./public/**/*.html', './src/js/main.js'],
   theme: {
     extend: {
-      // typography: {
-      //   DEFAULT: {
-      //     css: {
-      //       h1: {
-      //         color: '#B4B4B4',
-      //       },
-      //       h2: {
-      //         color: '#B4B4B4',
-      //       },
-      //       h3: {
-      //         color: '#B4B4B4',
-      //       },
-      //       h4: {
-      //         color: '#B4B4B4',
-      //       },
-      //     },
-      //   },
-      // },
-
       fontFamily: {
         sans: 'Roboto, sans-serif',
       },
