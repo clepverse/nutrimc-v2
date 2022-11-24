@@ -6,3 +6,9 @@ body {
   @apply text-sm md:text-base;
   -webkit-font-smoothing: antialiased;
 }
+
+@media screen and (max-height: 610px) {
+  .footer {
+    @apply opacity-0;
+  }
+}
